@@ -14,7 +14,7 @@ int main(int argc, char *argv[]) {
     // WRITE YOUR CODE HERE
     // Check if number of arguments is different from 2 // argc is the number of arguments
     if (argc != 3) {
-        printf("Incorrect usage. You provided %d arguments. The correct number of arguments is 2", argc);
+        printf("Incorrect usage. You provided %d arguments. The correct number of arguments is 2", argc - 1);
         return 1;
     }
     // Arguments need to be integers greater than 0 // atoi() is used to convert string to integer
