@@ -54,9 +54,9 @@ int main(int argc, char *argv[]) {
             }
 
         }
-    if (i != rows - 1){ // add the newline only if it is not the last row
-        fprintf(file, "\n");
-    }
+        if (i != rows - 1){ // add the newline only if it is not the last row
+            fprintf(file, "\n");
+        }
     }
     fclose(file);
 
