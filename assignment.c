@@ -52,7 +52,6 @@ int main(int argc, char *argv[]) {
             else{
                 fprintf(file, "%d ", matrix[i][j]); 
             }
-
         }
         if (i != rows - 1){ // add the newline only if it is not the last row
             fprintf(file, "\n");
@@ -60,7 +59,7 @@ int main(int argc, char *argv[]) {
     }
     fclose(file);
 
-    // Free memory (good practice because we allocated memory)
+    // Free memory (good practice because we allocated memory using malloc)
     for (int i = 0; i < rows; i++) {
         free(matrix[i]);
     }
